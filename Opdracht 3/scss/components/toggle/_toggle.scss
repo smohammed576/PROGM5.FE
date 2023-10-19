@@ -1,0 +1,38 @@
+@use "../../abstract/colors";
+
+.toggle__input{
+    appearance: none;
+    width: 4rem;
+    height: 2.1rem;
+    border-radius: 5rem;
+    position: relative;
+    border: 0.2rem solid colors.$accentcolor;
+    background: colors.$background;
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    &::after{
+        content: "";
+        position: absolute;
+        width: 2rem;
+        height: 2rem;
+        background: colors.$accentcolor;
+        border-radius: 50%;
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        transition: 0.4s;
+    }
+
+    &:focus:after{
+        outline: 0.2rem solid colors.$thirdAccentcolor;
+    }
+        &:checked{    
+            background: colors.$thirdAccentcolor;
+        }
+    &:checked::after{
+        left: 80%;
+    }
+}

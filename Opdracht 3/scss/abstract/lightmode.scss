@@ -1,0 +1,51 @@
+@use "colors";
+@use "animations";
+
+.lightmode{
+    background: colors.$lightmodeSecondcolor;
+    color: colors.$lightmodeAccentcolor;
+    @include animations.colorChange;
+}
+
+.lightmode__header{
+    background: colors.$lightmodeBackground;
+    color: colors.$lightmodeAccentcolor;
+    @include animations.colorChange;
+
+    & > figure{
+        background: colors.$lightmodeAccentcolor;
+        color: colors.$lightmodeSecondcolor;
+
+        &:hover{
+            color: colors.$lightmodeAccentcolor;
+        }
+    }
+}
+
+.lightmode__showcase{
+    background: colors.$lightmodeBackground;
+    box-shadow: inset 0 0 0.5rem 0 colors.$lightmodeSecondcolor;
+    @include animations.colorChange;
+
+    & > input{
+        border-bottom: 0.2rem solid colors.$lightmodeSecondcolor;
+        color: colors.$lightmodeAccentcolor;
+    }
+
+    & h2{
+        color: colors.$lightmodeAccentcolor;
+    }
+
+    & h3{
+        color: colors.$lightmodeAccentcolor;
+    }
+
+    & i{
+        color: colors.$lightmodeAccentcolor;
+    }
+
+    & i.fa-solid{
+        color: colors.$lightmodeAccentcolor;
+    }
+
+}

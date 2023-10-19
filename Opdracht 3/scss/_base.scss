@@ -1,0 +1,16 @@
+@use "./abstract/colors";
+@use "./abstract/mixins";
+
+*:focus{
+    outline: 0.2rem solid colors.$accentcolor !important;
+}
+body{
+    background: colors.$background;
+    min-height: 100vh;
+    @include mixins.flexCenter;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 4rem;
+    font-family: sans-serif;
+    color: white;
+}
