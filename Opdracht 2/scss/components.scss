@@ -1,0 +1,52 @@
+@use 'colors';
+
+%cta{
+    width: 11rem;
+    padding: 1rem;
+    font-size: 85%;
+    font-weight: 600;
+    background: colors.$gold;
+    font-family: sans-serif;
+    color: black;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+%cta:hover{
+    cursor: pointer;
+    background: darken(colors.$gold, 10%);
+    transition: 0.2s;
+}
+
+%h2Font{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 200%;
+    color: colors.$font-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    text-decoration: underline colors.$gold 0.2rem;
+}
+
+%section{
+    height: 80rem;
+    border-bottom: 0.2rem solid colors.$gold;
+    color: colors.$font-color;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+%header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+%icon{
+    font-size: 250%;
+    color: colors.$font-color;
+    border: 0.5rem solid colors.$gold;
+    border-radius: 50%;
+    padding: 1.5rem;
+}

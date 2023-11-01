@@ -1,0 +1,32 @@
+@use 'colors';
+@use 'components';
+
+.nav{
+    width: 100%;
+    background: colors.$black-transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 7rem;
+    font-weight: 600;
+    color: colors.$font-color;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.nav__button{
+    @extend %cta;
+}
+
+.nav__list{
+    display: flex;
+    list-style: none;
+    gap: 4rem;
+}
+
+.logo{
+    @extend %icon;
+}

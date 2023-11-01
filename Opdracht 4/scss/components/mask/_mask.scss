@@ -1,0 +1,43 @@
+@use "../../abstract/colors";
+
+.mask{
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    background: none;
+    bottom: 0;
+    left: 0;
+
+    &:before{
+        content: "";
+        background: colors.$maskColor;
+        width: 15rem;
+        height: 20rem;
+        position: absolute;
+        transform: rotate(-8deg) translate(10%, -7%);
+        border-radius: 1rem 5rem 0 25rem;
+    }
+
+    &:after{
+        content: "";
+        background: colors.$maskColor;
+        width: 13.5rem;
+        height: 19rem;
+        position: absolute;
+        transform: rotate(12deg) translate(78%, -16.5%);
+        border-radius: 5rem 50% 150cm 50em;
+    }
+
+    &__string{  
+        background: colors.$maskColor;
+        box-shadow: 0.1rem 0rem 0.2rem 0rem colors.$maskString;
+        position: absolute;
+        width: 10rem;
+        height: 0.6rem;
+        top: 15%;
+        right: -6rem;
+        transform: rotate(-45deg) translate(15%, -3rem);
+        z-index: 10;
+        border-radius: 50rem;
+    }
+}

@@ -1,0 +1,63 @@
+@use 'colors';
+@use 'components';
+
+.gallerij{
+    @extend %section;
+    padding-bottom: 2rem;
+}
+
+.gallerij__header{
+    @extend %header;
+}
+
+.gallerij__h2{
+    @extend %h2Font;
+}
+
+.gallerij__fotos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallerij__foto{
+    width: 25%;
+    height: 40rem;
+    list-style: none;
+    position: relative;
+}
+
+.gallerij__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallerij__gradient{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), 80%, rgba(19, 23, 41, 0.4));
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: 0.8s;
+    transform-origin: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallerij__button{
+    @extend %cta;
+    opacity: 0;
+    transition-delay: 0.8s;
+    transition-duration: 0.2s;
+}
+
+.gallerij__foto:hover .gallerij__button{
+    opacity: 1;
+}
+
+.gallerij__foto:hover .gallerij__gradient{
+    transform: scale(1);
+}

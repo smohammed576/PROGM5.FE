@@ -1,0 +1,63 @@
+@use "../../abstract/colors";
+@use "../../abstract/mixins";
+
+.ears{
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    top: 0;
+    left: 0;
+    @include mixins.flexCenter;
+    gap: 2rem;
+
+    &__left{
+        background: colors.$earsGrey;
+        position: absolute;
+        top: -45%;
+        left: 31%;
+        width: 23%;
+        height: 25rem;
+        border-radius: 100%/100%;
+        transform: rotate(-15deg);
+        border: 1rem solid colors.$earsGrey;
+        z-index: 3;
+
+        &::before{
+            content: "";
+            position: absolute;
+            background: colors.$earsGradient;
+            box-shadow: inset 0.1rem 0rem 1rem 0.3rem colors.$earsGrey;
+            width: 18rem;
+            height: 18rem;
+            border-radius: 25rem 0 25rem 0;
+            bottom: 0;
+            transform: rotate(-45deg) translate(-0rem, -5.5rem);
+        }
+    }
+
+    &__right{
+        background: colors.$earsPurple;
+        background: colors.$earsGradient;
+        position: absolute;
+        top: -15%;
+        left: 58%;
+        width: 23%;
+        height: 25rem;
+        border-radius: 90%/100%;
+        transform: rotate(25deg);
+        border: 2rem solid colors.$earsGrey;
+        z-index: 1;
+
+        &::before{
+            content: "";
+            position: absolute;
+            background: colors.$earsGradient;
+            box-shadow: inset 0.1rem 0rem 1rem 0.3rem colors.$earsGrey;
+            width: 18rem;
+            height: 18rem;
+            border-radius: 25rem 0 25rem 0;
+            bottom: -0.5rem;
+            transform: rotate(-43deg) translate(-1rem, -6rem);
+        }
+    }
+}

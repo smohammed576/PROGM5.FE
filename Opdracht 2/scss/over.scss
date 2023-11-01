@@ -1,0 +1,51 @@
+@use 'colors';
+@use 'components';
+
+.over{
+    padding: 4rem;
+    height: 80rem;
+    border-bottom: 0.2rem solid colors.$gold;
+}
+
+.over__h2{
+    @extend %h2Font;
+}
+
+.over__p{
+    width: 55ch;
+    color: colors.$font-color;
+}
+
+.over__columns{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 6rem;
+}
+
+.over__column{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.over__figure{
+    position: relative;
+    width: 40rem;
+    height: 40rem;
+}
+
+.over__figure::after{
+    content: "";
+    background: colors.$linear-gradient-default;
+    height: 100%;
+}
+
+.over__img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}

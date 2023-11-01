@@ -1,0 +1,41 @@
+@use 'colors';
+@use 'components';
+
+.kenmerken{
+    @extend %section;
+}
+
+.kenmerken__h2{
+    @extend %h2Font;
+}
+
+.kenmerken__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
+.kenmerken__listItem{
+    list-style: none;
+    color: colors.$font-color;
+    flex-shrink: 0;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.kenmerken__p{
+    width: 30ch;
+    text-align: center;
+}
+
+.kenmerken__logo{
+    @extend %icon;
+    margin: 2rem;
+}

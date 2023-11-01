@@ -1,0 +1,29 @@
+@use "abstract/colors";
+@use "abstract/mixins";
+@use "abstract/animations";
+
+body{
+    font-size: 1.5rem;
+    min-height: 100vh;
+    @include mixins.flexCenter;
+    flex-direction: column;
+    background: colors.$background;
+    color: colors.$whiteFont;
+    font-family: sans-serif;
+}
+
+.background{
+    position: relative;
+    background: colors.$backgroundSection;
+    width: 55.4rem;
+    height: 55.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 4rem;
+    overflow: hidden;
+    z-index: -10;
+    border: 0.4rem solid colors.$borderColorPurple;
+    @include animations.borderColor;
+    margin: 1rem;
+}

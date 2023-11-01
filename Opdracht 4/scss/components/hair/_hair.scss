@@ -1,0 +1,223 @@
+@use "../../abstract/colors";
+
+.hair{
+    &__section:nth-child(1){
+        background: colors.$hairColor;
+        width: 40%;
+        height: 12rem;
+        position: absolute;
+        border-radius: 25rem 0 25rem 0;
+        top: 0;
+        left: 0;
+        transform: rotate(-195deg) translate(-26%, -115%);
+        z-index: 3;
+
+        &::before{
+            content: "";
+            display: block;
+            width: 5.8rem;
+            height: 4.7rem;
+            position: absolute;
+            transform: rotate(-12deg) translate(10.5rem, -7rem);
+            border-radius: 80% / 100%;
+            box-shadow: 1rem 1.6rem 0 0 colors.$hairColor;
+            top: 4.7rem;
+        }
+
+        &::after{
+            content: "";
+            display: block;
+            width: 5.8rem;
+            height: 4.7rem;
+            position: absolute;
+            transform: rotate(55deg) translate(-2.5rem, -11rem);
+            border-radius: 80% / 100%;
+            box-shadow: 1rem 0.01rem 0 0 colors.$hairColor;
+            top: 4.7rem;
+        }
+    }
+    
+    &__section:nth-child(2){
+        background: colors.$hairColor;
+        width: 40%;
+        height: 12rem;
+        position: absolute;
+        border-radius: 0 25rem 0 25rem;
+        top: 0;
+        left: 0;
+        transform: rotate(190deg) translate(-115%, -60%);
+        z-index: 2;
+
+        &::before{
+            content: "";
+            position: absolute;
+            background: colors.$hairColor;
+            width: 50%;
+            height: 50%;
+            border-radius: 0 25rem 0 25rem;
+            top: 0rem;
+            left: 9rem;
+            transform: rotate(10deg);
+        }
+
+        &::after{
+            content: "";
+            position: absolute;
+            background: colors.$hairColor;
+            width: 30%;
+            height: 30%;
+            border-radius: 25rem 0 25rem 0;
+            top: -2.5rem;
+            left: 19rem;
+            transform: rotate(110deg);
+        }
+    }
+    
+    &__section:nth-child(3){
+        background: colors.$hairColor;
+        width: 40%;
+        height: 12rem;
+        position: absolute;
+        border-radius: 25rem 0 25rem 0;
+        top: 0;
+        left: 0;
+        transform: rotate(-50deg) translate(-60%, 130%);
+        z-index: 0;
+    }
+
+    &__section:nth-child(4){
+        background: colors.$hairColor;
+        width: 40%;
+        height: 10rem;
+        position: absolute;
+        border-radius: 0 25rem 0 25rem;
+        top: 0;
+        left: 0;
+        transform: rotate(-120deg) translate(-155%, 160%);
+        z-index: 2;
+
+        &::before{
+            content: "";
+            position: absolute;
+            background: colors.$hairColor;
+            width: 60%;
+            height: 60%;
+            top: 1rem;
+            left: 4rem;
+            border-radius: 0 25rem 0 25rem;
+            transform: rotate(-5deg) translate(4rem, 2rem);
+        }}
+
+    &__section:nth-child(5){
+        background: colors.$hairColor;
+        width: 40%;
+        height: 12rem;
+        position: absolute;
+        border-radius: 25rem 0 25rem 0;
+        top: 0;
+        left: 0;
+        transform: rotate(-95deg) translate(-150%, 210%);
+        z-index: 0;
+
+        &::before{
+            content: "";
+            background: colors.$hairColor;
+            width: 50%;
+            height: 50%;
+            position: absolute;
+            border-radius: 25rem 0 25rem 0;
+            transform: rotate(-5deg) translate(-2.5rem, 0rem);
+        }
+
+        &::after{
+            content: "";
+            background: colors.$hairColor;
+            width: 50%;
+            height: 50%;
+            position: absolute;
+            border-radius: 25rem 0 25rem 0;
+            transform: rotate(-4deg) translate(-5rem, -3rem);
+        }
+    }
+
+    &__section:nth-child(6){
+        background: colors.$hairColor;
+        width: 30%;
+        height: 8rem;
+        position: absolute;
+        border-radius: 0 25rem 0 25rem;
+        top: 0;
+        left: 0;
+        transform: rotate(-80deg) translate(-22.5rem, 9rem);
+        z-index: 2;
+    }
+
+    &__section:nth-child(7){
+        background: colors.$hairColor;
+        width: 30%;
+        height: 8rem;
+        position: absolute;
+        border-radius: 0 25rem 0 25rem;
+        top: 0;
+        left: 0;
+        transform: rotate(-65deg) translate(-28rem, 20rem);
+        z-index: 0;
+
+        &::before{
+            content: "";
+            background: colors.$hairColor;
+            width: 50%;
+            height: 50%;
+            position: absolute;
+            border-radius: 0 25rem 0 25rem;
+            transform: rotate(-4deg) translate(-3rem, 9.5rem);
+        }
+    }
+    
+    &__section:nth-child(9){
+        background: colors.$hairColor;
+        width: 20%;
+        height: 8rem;
+        position: absolute;
+        border-radius: 25rem 0 25rem 0;
+        top: 0;
+        left: 0;
+        transform: rotate(-70deg) translate(-7rem, 24rem);
+        z-index: 2;
+    }
+
+    &__section:nth-child(10){
+        background: colors.$hairColor;
+        width: 20%;
+        height: 8rem;
+        position: absolute;
+        border-radius: 25rem 0 25rem 0;
+        top: 0;
+        left: 0;
+        transform: rotate(-73deg) translate(-6rem, 28rem);
+        z-index: 2;
+    }
+
+    &__section:nth-child(11){
+        background: colors.$hairColor;
+        width: 20%;
+        height: 8rem;
+        position: absolute;
+        border-radius: 0 25rem 0 25rem;
+        top: 0;
+        left: 0;
+        transform: rotate(-130deg) translate(-35rem, -17rem);
+        z-index: 0;
+
+        &::before{
+            content: "";
+            background: colors.$hairColor;
+            width: 10rem;
+            height: 5rem;
+            border-radius: 0 25rem 0 25rem;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transform: rotate(45deg) translate(-55%, 130%);
+        }
+    }}

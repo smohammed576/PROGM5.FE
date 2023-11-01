@@ -1,0 +1,45 @@
+@use "colors";
+
+@keyframes typing{
+    0%{
+        width: 0%;
+    }
+    10%{
+        width: 25%;
+    }
+    20%{
+        width: 50%;
+    }
+    30%{
+        width: 100%;
+    }
+    40%{
+        width: 100%;
+    }
+    50%{
+        width: 100%;
+    }
+    60%{
+        width: 100%;
+    }
+    80%{
+        width: 50%;
+    }
+    100%{
+        width: 0%;
+    }
+}
+
+@mixin typing{
+    animation: typing 4s steps(40, end) infinite;
+}
+
+@keyframes borderColor{
+    50% {
+        border-color: colors.$borderColorBlue;
+    }
+}
+
+@mixin borderColor{
+    animation: borderColor 5s infinite;
+}

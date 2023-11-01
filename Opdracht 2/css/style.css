@@ -1,0 +1,280 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a, a:visited, a:link {
+  color: #eee;
+  text-decoration: none;
+}
+
+body {
+  font-size: 2rem;
+  font-family: sans-serif;
+  background: #000000;
+}
+
+.gallerij__button, .header__button, .nav__button {
+  width: 11rem;
+  padding: 1rem;
+  font-size: 85%;
+  font-weight: 600;
+  background: #C69749;
+  font-family: sans-serif;
+  color: black;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.gallerij__button:hover, .header__button:hover, .nav__button:hover {
+  cursor: pointer;
+  background: #a87c34;
+  transition: 0.2s;
+}
+
+.gallerij__h2, .kenmerken__h2, .over__h2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 200%;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+  text-decoration: underline #C69749 0.2rem;
+}
+
+.gallerij, .kenmerken {
+  height: 80rem;
+  border-bottom: 0.2rem solid #C69749;
+  color: #eee;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.gallerij__header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.kenmerken__logo, .logo {
+  font-size: 250%;
+  color: #eee;
+  border: 0.5rem solid #C69749;
+  border-radius: 50%;
+  padding: 1.5rem;
+}
+
+.nav {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 7rem;
+  font-weight: 600;
+  color: #eee;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+  gap: 4rem;
+}
+
+.header {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.header__figure {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), 80%, rgba(19, 23, 41, 0.4)), url(/img/spacething.webp);
+  background-position: center;
+  background-size: cover;
+}
+
+.header__figure > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  color: #eee;
+}
+
+.header__h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 400%;
+}
+
+.over {
+  padding: 4rem;
+  height: 80rem;
+  border-bottom: 0.2rem solid #C69749;
+}
+
+.over__p {
+  width: 55ch;
+  color: #eee;
+}
+
+.over__columns {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 6rem;
+}
+
+.over__column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.over__figure {
+  position: relative;
+  width: 40rem;
+  height: 40rem;
+}
+
+.over__figure::after {
+  content: "";
+  background: linear-gradient(rgba(0, 0, 0, 0.4), 80%, rgba(19, 23, 41, 0.4));
+  height: 100%;
+}
+
+.over__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.kenmerken__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+}
+
+.kenmerken__listItem {
+  list-style: none;
+  color: #eee;
+  flex-shrink: 0;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.kenmerken__p {
+  width: 30ch;
+  text-align: center;
+}
+
+.kenmerken__logo {
+  margin: 2rem;
+}
+
+.gallerij {
+  padding-bottom: 2rem;
+}
+
+.gallerij__fotos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallerij__foto {
+  width: 25%;
+  height: 40rem;
+  list-style: none;
+  position: relative;
+}
+
+.gallerij__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallerij__gradient {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), 80%, rgba(19, 23, 41, 0.4));
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transition: 0.8s;
+  transform-origin: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallerij__button {
+  opacity: 0;
+  transition-delay: 0.8s;
+  transition-duration: 0.2s;
+}
+
+.gallerij__foto:hover .gallerij__button {
+  opacity: 1;
+}
+
+.gallerij__foto:hover .gallerij__gradient {
+  transform: scale(1);
+}
+
+.footer {
+  background: #C69749;
+  height: 7rem;
+  color: #eee;
+  margin-top: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.footerDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  font-size: 3rem;
+}
+
+.footerDiv__icon {
+  transition: 0.4s;
+}
+
+.footerDiv__icon:hover {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+/*# sourceMappingURL=style.css.map */

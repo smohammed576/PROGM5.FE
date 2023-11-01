@@ -1,0 +1,13 @@
+@use "../../abstract/colors";
+
+.face{
+    position: relative;
+    background: colors.$skincolor;
+    width: 27rem;
+    height: 38rem;
+    border-radius: 50%;
+    background: colors.$skincolorGradient;
+    overflow: hidden;
+    transform: rotate(2deg);
+    z-index: 1;
+}

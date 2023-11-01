@@ -1,0 +1,42 @@
+@use "../../abstract/animations";
+@use "../../abstract/colors";
+@use "../../abstract/mixins";
+
+.avanDiv{
+    @include mixins.flexCenter;
+    flex-direction: column;
+    gap: 1rem;
+
+    &__name{
+        overflow: hidden;
+        white-space: nowrap;
+        margin: 0 auto;
+        @include animations.typing;
+        font-size: 2rem;
+        border-bottom: 0.2rem solid colors.$borderColorPurple;
+    }
+    &__pronouns, &__age{
+        font-size: 1.3rem;
+        color: colors.$fontColor;
+    }
+}
+
+.avanSpan{
+    text-align: center;
+    @include mixins.flexCenter;
+    gap: 1rem;
+    padding: 1rem;
+
+    &__link{
+        text-decoration: none;
+    }
+
+    &__socials{
+        font-size: 1.25rem;
+        color: colors.$fontColor;
+
+        &:hover{
+            color: colors.$borderColorBlue;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@use 'colors';
+@use 'components';
+
+.footer{
+    background: colors.$gold;
+    height: 7rem;
+    color: colors.$font-color;
+    margin-top: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.footerDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    font-size: 3rem;
+}
+
+.footerDiv__icon{
+    transition: 0.4s;
+}
+
+.footerDiv__icon:hover{
+    color: colors.$black-transparent;
+}
