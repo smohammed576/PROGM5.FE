@@ -129,12 +129,19 @@ body {
   transform: rotate(-43deg) translate(-1rem, -6rem);
 }
 
+.hair__section:nth-child(1), .hair__section:nth-child(2)::after, .hair__section:nth-child(3), .hair__section:nth-child(5), .hair__section:nth-child(5)::before, .hair__section:nth-child(5)::after, .hair__section:nth-child(9), .hair__section:nth-child(10) {
+  border-radius: 25rem 0 25rem 0;
+}
+
+.hair__section:nth-child(2), .hair__section:nth-child(2)::before, .hair__section:nth-child(4), .hair__section:nth-child(4)::before, .hair__section:nth-child(6), .hair__section:nth-child(7), .hair__section:nth-child(7)::before, .hair__section:nth-child(11), .hair__section:nth-child(11)::before {
+  border-radius: 0 25rem 0 25rem;
+}
+
 .hair__section:nth-child(1) {
   background: rgb(215, 201, 132);
   width: 40%;
   height: 12rem;
   position: absolute;
-  border-radius: 25rem 0 25rem 0;
   top: 0;
   left: 0;
   transform: rotate(-195deg) translate(-26%, -115%);
@@ -167,7 +174,6 @@ body {
   width: 40%;
   height: 12rem;
   position: absolute;
-  border-radius: 0 25rem 0 25rem;
   top: 0;
   left: 0;
   transform: rotate(190deg) translate(-115%, -60%);
@@ -179,7 +185,6 @@ body {
   background: rgb(215, 201, 132);
   width: 50%;
   height: 50%;
-  border-radius: 0 25rem 0 25rem;
   top: 0rem;
   left: 9rem;
   transform: rotate(10deg);
@@ -190,7 +195,6 @@ body {
   background: rgb(215, 201, 132);
   width: 30%;
   height: 30%;
-  border-radius: 25rem 0 25rem 0;
   top: -2.5rem;
   left: 19rem;
   transform: rotate(110deg);
@@ -200,7 +204,6 @@ body {
   width: 40%;
   height: 12rem;
   position: absolute;
-  border-radius: 25rem 0 25rem 0;
   top: 0;
   left: 0;
   transform: rotate(-50deg) translate(-60%, 130%);
@@ -211,7 +214,6 @@ body {
   width: 40%;
   height: 10rem;
   position: absolute;
-  border-radius: 0 25rem 0 25rem;
   top: 0;
   left: 0;
   transform: rotate(-120deg) translate(-155%, 160%);
@@ -225,7 +227,6 @@ body {
   height: 60%;
   top: 1rem;
   left: 4rem;
-  border-radius: 0 25rem 0 25rem;
   transform: rotate(-5deg) translate(4rem, 2rem);
 }
 .hair__section:nth-child(5) {
@@ -233,7 +234,6 @@ body {
   width: 40%;
   height: 12rem;
   position: absolute;
-  border-radius: 25rem 0 25rem 0;
   top: 0;
   left: 0;
   transform: rotate(-95deg) translate(-150%, 210%);
@@ -245,7 +245,6 @@ body {
   width: 50%;
   height: 50%;
   position: absolute;
-  border-radius: 25rem 0 25rem 0;
   transform: rotate(-5deg) translate(-2.5rem, 0rem);
 }
 .hair__section:nth-child(5)::after {
@@ -254,7 +253,6 @@ body {
   width: 50%;
   height: 50%;
   position: absolute;
-  border-radius: 25rem 0 25rem 0;
   transform: rotate(-4deg) translate(-5rem, -3rem);
 }
 .hair__section:nth-child(6) {
@@ -262,7 +260,6 @@ body {
   width: 30%;
   height: 8rem;
   position: absolute;
-  border-radius: 0 25rem 0 25rem;
   top: 0;
   left: 0;
   transform: rotate(-80deg) translate(-22.5rem, 9rem);
@@ -273,7 +270,6 @@ body {
   width: 30%;
   height: 8rem;
   position: absolute;
-  border-radius: 0 25rem 0 25rem;
   top: 0;
   left: 0;
   transform: rotate(-65deg) translate(-28rem, 20rem);
@@ -285,7 +281,6 @@ body {
   width: 50%;
   height: 50%;
   position: absolute;
-  border-radius: 0 25rem 0 25rem;
   transform: rotate(-4deg) translate(-3rem, 9.5rem);
 }
 .hair__section:nth-child(9) {
@@ -293,7 +288,6 @@ body {
   width: 20%;
   height: 8rem;
   position: absolute;
-  border-radius: 25rem 0 25rem 0;
   top: 0;
   left: 0;
   transform: rotate(-70deg) translate(-7rem, 24rem);
@@ -304,7 +298,6 @@ body {
   width: 20%;
   height: 8rem;
   position: absolute;
-  border-radius: 25rem 0 25rem 0;
   top: 0;
   left: 0;
   transform: rotate(-73deg) translate(-6rem, 28rem);
@@ -315,7 +308,6 @@ body {
   width: 20%;
   height: 8rem;
   position: absolute;
-  border-radius: 0 25rem 0 25rem;
   top: 0;
   left: 0;
   transform: rotate(-130deg) translate(-35rem, -17rem);
@@ -326,7 +318,6 @@ body {
   background: rgb(215, 201, 132);
   width: 10rem;
   height: 5rem;
-  border-radius: 0 25rem 0 25rem;
   position: absolute;
   bottom: 0;
   left: 0;

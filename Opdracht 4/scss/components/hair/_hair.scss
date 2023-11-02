@@ -1,4 +1,5 @@
 @use "../../abstract/colors";
+@use "../../abstract/extends";
 
 .hair{
     &__section:nth-child(1){
@@ -6,7 +7,7 @@
         width: 40%;
         height: 12rem;
         position: absolute;
-        border-radius: 25rem 0 25rem 0;
+        @extend %borderRadius;
         top: 0;
         left: 0;
         transform: rotate(-195deg) translate(-26%, -115%);
@@ -42,7 +43,7 @@
         width: 40%;
         height: 12rem;
         position: absolute;
-        border-radius: 0 25rem 0 25rem;
+        @extend %borderRadiusReverse;
         top: 0;
         left: 0;
         transform: rotate(190deg) translate(-115%, -60%);
@@ -54,7 +55,7 @@
             background: colors.$hairColor;
             width: 50%;
             height: 50%;
-            border-radius: 0 25rem 0 25rem;
+            @extend %borderRadiusReverse;
             top: 0rem;
             left: 9rem;
             transform: rotate(10deg);
@@ -66,7 +67,7 @@
             background: colors.$hairColor;
             width: 30%;
             height: 30%;
-            border-radius: 25rem 0 25rem 0;
+            @extend %borderRadius;
             top: -2.5rem;
             left: 19rem;
             transform: rotate(110deg);
@@ -78,7 +79,7 @@
         width: 40%;
         height: 12rem;
         position: absolute;
-        border-radius: 25rem 0 25rem 0;
+        @extend %borderRadius;
         top: 0;
         left: 0;
         transform: rotate(-50deg) translate(-60%, 130%);
@@ -90,7 +91,7 @@
         width: 40%;
         height: 10rem;
         position: absolute;
-        border-radius: 0 25rem 0 25rem;
+        @extend %borderRadiusReverse;
         top: 0;
         left: 0;
         transform: rotate(-120deg) translate(-155%, 160%);
@@ -104,7 +105,7 @@
             height: 60%;
             top: 1rem;
             left: 4rem;
-            border-radius: 0 25rem 0 25rem;
+            @extend %borderRadiusReverse;
             transform: rotate(-5deg) translate(4rem, 2rem);
         }}
 
@@ -113,7 +114,7 @@
         width: 40%;
         height: 12rem;
         position: absolute;
-        border-radius: 25rem 0 25rem 0;
+        @extend %borderRadius;
         top: 0;
         left: 0;
         transform: rotate(-95deg) translate(-150%, 210%);
@@ -125,7 +126,7 @@
             width: 50%;
             height: 50%;
             position: absolute;
-            border-radius: 25rem 0 25rem 0;
+            @extend %borderRadius;
             transform: rotate(-5deg) translate(-2.5rem, 0rem);
         }
 
@@ -135,7 +136,7 @@
             width: 50%;
             height: 50%;
             position: absolute;
-            border-radius: 25rem 0 25rem 0;
+            @extend %borderRadius;
             transform: rotate(-4deg) translate(-5rem, -3rem);
         }
     }
@@ -145,7 +146,7 @@
         width: 30%;
         height: 8rem;
         position: absolute;
-        border-radius: 0 25rem 0 25rem;
+        @extend %borderRadiusReverse;
         top: 0;
         left: 0;
         transform: rotate(-80deg) translate(-22.5rem, 9rem);
@@ -157,7 +158,7 @@
         width: 30%;
         height: 8rem;
         position: absolute;
-        border-radius: 0 25rem 0 25rem;
+        @extend %borderRadiusReverse;
         top: 0;
         left: 0;
         transform: rotate(-65deg) translate(-28rem, 20rem);
@@ -169,7 +170,7 @@
             width: 50%;
             height: 50%;
             position: absolute;
-            border-radius: 0 25rem 0 25rem;
+            @extend %borderRadiusReverse;
             transform: rotate(-4deg) translate(-3rem, 9.5rem);
         }
     }
@@ -179,7 +180,7 @@
         width: 20%;
         height: 8rem;
         position: absolute;
-        border-radius: 25rem 0 25rem 0;
+        @extend %borderRadius;
         top: 0;
         left: 0;
         transform: rotate(-70deg) translate(-7rem, 24rem);
@@ -191,7 +192,7 @@
         width: 20%;
         height: 8rem;
         position: absolute;
-        border-radius: 25rem 0 25rem 0;
+        @extend %borderRadius;
         top: 0;
         left: 0;
         transform: rotate(-73deg) translate(-6rem, 28rem);
@@ -203,7 +204,7 @@
         width: 20%;
         height: 8rem;
         position: absolute;
-        border-radius: 0 25rem 0 25rem;
+        @extend %borderRadiusReverse;
         top: 0;
         left: 0;
         transform: rotate(-130deg) translate(-35rem, -17rem);
@@ -214,7 +215,7 @@
             background: colors.$hairColor;
             width: 10rem;
             height: 5rem;
-            border-radius: 0 25rem 0 25rem;
+            @extend %borderRadiusReverse;
             position: absolute;
             bottom: 0;
             left: 0;
