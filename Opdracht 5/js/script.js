@@ -53,5 +53,17 @@ function addSection(data){
             let toBeAddedP = document.createElement("p");
             toBeAddedLi.appendChild(toBeAddedP);
             toBeAddedP.innerText = data.activities[i].description;
+            let toBeAddedFigure = document.createElement("figure");
+            toBeAddedFigure.classList.add("tasks__listItem--figure");
+            toBeAddedLi.appendChild(toBeAddedFigure);
+            let toBeAddedInitials = document.createElement("h2");
+            toBeAddedInitials.classList.add("tasks__listItem--figureInitials");
+            toBeAddedInitials.innerText = data.activities[i].initials;
+            toBeAddedFigure.appendChild(toBeAddedInitials);
+            let toBeAddedImage = document.createElement("img");
+            toBeAddedImage.classList.add("tasks__listItem--figureImage");
+            toBeAddedImage.src = data.activities[i].imgPath;
+            toBeAddedImage.setAttribute("title", data.activities[i].name);
+            toBeAddedFigure.appendChild(toBeAddedImage);
     }
 }

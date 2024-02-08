@@ -4,6 +4,7 @@
     background: map-get(variables.$tasksVars, "background");
     width: 100%;
     height: 5rem;
+    position: fixed;
 
     &__list{
         display: flex;

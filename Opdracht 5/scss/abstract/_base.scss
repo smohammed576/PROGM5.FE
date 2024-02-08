@@ -1,19 +1,28 @@
 @use "variables.scss";
 
 body{
-    min-height: 100vh;
+    max-height: 100vh;
     background: variables.$backgroundColor;
     font-size: map-get(variables.$fontVars, "size");
     font-family: map-get(variables.$fontVars, "font");
     color: map-get(variables.$fontVars, "color");
     display: flex;
-    flex-direction: column;
     overflow-y: hidden;
-    width: min-content;
 }
 
 .main{
     display: flex;
     gap: 4rem;
     padding: 4rem;
+}
+
+::-webkit-scrollbar{
+    background: map-get(variables.$tasksVars, "headerNumber");
+    border-radius: 1rem;
+    width: 1rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background: map-get(variables.$tasksVars, "taskBackground");
+    border-radius: 1rem;
 }
